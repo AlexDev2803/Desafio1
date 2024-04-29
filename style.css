@@ -1,80 +1,108 @@
 body {
-  font-family: "Open Sans", sans-serif;
-
-  text-align: center;
-  margin: 0
+    margin: 0px;
+    font-family: "open sans", sans-serif;
+    background: linear-gradient(180deg,rgba(227, 255, 248,0) 82.08%, rgba(227, 255, 248, 0.38)100%); 
+    min-height: 100%vh;
 }
 
-#main {
-    width: 626px;
-    margin:64px auto 64px
+.page {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 65px;
 }
 
-#main img {
-    margin-bottom: 32px;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+    font-family: 'Mulish', sans-serif;
+    }
+
+ul {  
+    list-style: none;
+    display: flex;
+    gap: 48px;
+    margin: 0px;
+    padding: 0px;    
+    }
+
+a {
+    color: #1f1534;
+    text-decoration: none;
+}
+
+ul li a{
+    opacity: 0.5;
+}
+
+ul li a:hover {
+    font-weight: 700;
+    opacity: 1;
+}
+
+h1, ul {
+    font-family: "Mulish", sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 h1 {
-  font-family: "Dosis", sans-serif;
-  font-size: 32px;
-  line-height: auto;
-  font-weight: medium;
-  
-  margin-bottom: 16px;
-
-  color:#3f3d56
+font-size: 49px;
+line-height: 56px;
+color: #1f1534;
+font-weight: 400;
+width: 490px;
 }
 
 h1 span {
-  font-weight: bold; 
+    color: #89C5CC;
+    font-weight: 700;
 }
 
-span {
-  color: #EE24FF;
+section p {
+    font-size: 14px;
+    line-height: 28px;
+    color: #7D7987;
+    margin: 40px 0;
 }
 
-strong {
-  color: #3f3d56
+button{
+    color: white;
+    text-transform: uppercase;
+    font-family: "open sans", sans-serif;
+    background: #69B99D;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 32px 15px;
+    border-radius: 4px; 
+    cursor: pointer;
 }
 
-p {
-
-    font-size: 15px;
-  line-height: 22px;
-  font-weight: regular;
-  color:#828282;
+button:hover {
+    background: #2b9c75;
+}
+   
+footer{
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 80px;
 }
 
-a {color: #3f3d56;
-  text-decoration: none;
+footer a {
+    font-weight: 700;
 }
 
-
-#footer {
-  font-size: 15px;
-  line-height: 147,7%;
-  font-weight: bold;
-  margin-bottom: 40.16px;
- }
-
-#footer a + a {
-    margin-left: 41px;
-  }
-
-.line {
-  width: 391px;
-  height: 0;
-
-  margin: 0 auto 16px;
-
-  border: 1px solid #ECEFF2;
-}
-
-#wave {
-    position: static;
+#balls {
+    position: fixed;
     bottom: 0;
-    left: 0;
     right: 0;
-    width: 100%;    
-    margin-top: 40.82px;
 }
